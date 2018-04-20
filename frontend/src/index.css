@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0,0,0, 0.70);
+}
+
+.modal {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  right: 200px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,.24), 0 3px 12px 0 rgba(0,0,0,.12);
+  min-width: 500px;
+}
+
+.score-item {
+  display: block;
+  float: left;
+  padding:50px 15px 15px 15px;
+  margin:15px;
+  width: 15%;
+}
+
+.preview-comment-container .score-item {
+  display: block;
+  float: left;
+  padding:10px 15px 15px 15px;
+  margin:15px;
+  width: 10%;
+}
+
+.preview-post-content, .post-detail {
+  display: block;
+  float: left;
+  border: 1px solid rgb(58, 56, 56);
+  padding: 15px;
+  margin: 15px;
+  width: 65%;
+  text-align: left;
+}
+.preview-post-container, .post-container {
+  display: block;
+  float: left;
+  width:100%;
+}
+
+a.header-nav {
+ text-decoration: none; 
+}
+
+.preview-comment-container {
+  display: block;
+  float: left;
+  width:90%;
+  margin-left:10%;
+}
+
+.preview-comment-content, .comment-detail {
+  display: block;
+  float: left;
+  border: 1px solid rgb(58, 56, 56);
+  padding: 15px;
+  margin: 15px;
+  width: 68%;
+  text-align: left;
+}
+
+.listcomments-container {
+  width: 100%;
+  float: left;
+  display: block;
+}
