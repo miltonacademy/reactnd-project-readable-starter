@@ -1,6 +1,6 @@
 # Readable Application
 
-This application collects a list of books, allows a user to assign those books to a shelf (such as read, currently reading, etc.) and add new books fetched from an API, and assign those new books to a shelf.
+This application displays a list of posts, allowing users to contribute posts, comment on them, and sort via various criteria.
 
 # Installation
 
