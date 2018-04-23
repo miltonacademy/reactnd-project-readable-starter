@@ -86,7 +86,7 @@ class ListPosts extends Component {
                 <p>&nbsp;</p>
                 <strong>Categories:&nbsp;&nbsp;</strong>
                 <Link
-                    to="/React/"
+                    to="/react/"
                     className="add-contact"
                     >
                 <button
@@ -96,7 +96,7 @@ class ListPosts extends Component {
                 </button>    
                 </Link>
                 <Link
-                    to="/Redux/"
+                    to="/redux/"
                     className="add-contact"
                     >
                 <button
@@ -106,7 +106,7 @@ class ListPosts extends Component {
                 </button>    
                 </Link>
                 <Link
-                    to="/Udacity/"
+                    to="/udacity/"
                     className="add-contact"
                     >
                 <button

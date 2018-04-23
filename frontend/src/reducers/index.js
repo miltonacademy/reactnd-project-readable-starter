@@ -121,6 +121,8 @@ function posts (state=initialPostState,action) {
             } 
         case UPDATE_POST :
             let updatePostState = {...state}
+            console.log('*** updatePostState is',updatePostState)
+            console.log('***action.post is',action.post)
             let postToUpdateID = action.post.post.id
             console.log('updatePostState is %O',updatePostState)
             console.log('*UPDATE_POST REDUCER* action.post.post.voteScore is',action.post.post.voteScore)

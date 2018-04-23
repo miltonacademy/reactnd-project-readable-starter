@@ -92,9 +92,9 @@ export const receiveComments = comments => ({
     comments
 });
 
-export const addNewComment = comment => ({
+export const addNewComment = (comment,post) => ({
     type: ADD_NEW_COMMENT,
-    comment
+    comment,post
 });
 
 export const fetchPostsAction = () => dispatch => (
@@ -149,6 +149,10 @@ export const voteDownAction = (post) => dispatch => {
     ReadableAPI.voteDown(post)
     .then(post => dispatch(voteDown(post)))
     .then(post => dispatch(updatePost(post)))
+}
+
+export const updatePostAction = (post) => dispatch => {
+    dispatch(updatePost(post))
 }
 
 export const voteUpCommentAction = (comment) => dispatch => {

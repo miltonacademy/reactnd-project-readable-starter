@@ -85,6 +85,7 @@ class FullPost extends Component {
                     <ListComments
                         comments = {this.props.comments}
                         parentId = {post.id}
+                        post = {post}
                         />
                 </div>
 

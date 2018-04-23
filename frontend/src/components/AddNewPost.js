@@ -31,10 +31,10 @@ class AddNewPost extends Component {
                         <textarea name="body" rows="5" cols="40" placeholder="Body"></textarea><br/>
                         <input type="text" name="author" placeholder="Author" /><br/>
                         Category:<br/>
-                        <select name="category" value>
-                            <option value="React" selected>React</option>
-                            <option value="Redux">Redux</option>
-                            <option value="React">Udacity</option>
+                        <select name="category">
+                            <option value="react" selected>React</option>
+                            <option value="redux">Redux</option>
+                            <option value="udacity">Udacity</option>
                         </select>
                         <br/>
                         <button>SUBMIT</button>

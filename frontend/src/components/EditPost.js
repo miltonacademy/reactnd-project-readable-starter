@@ -36,9 +36,9 @@ class EditPost extends Component {
                            /><br/>
                         <textarea defaultValue={thePost.body} name="body" placeholder="Body" /><br/>
                         <select name="category" defaultValue={thePost.category}>
-                            <option value="React">React</option>
-                            <option value="Redux">Redux</option>
-                            <option value="Udacity">Udacity</option>
+                            <option value="react">React</option>
+                            <option value="redux">Redux</option>
+                            <option value="udacity">Udacity</option>
                         </select>
                         <input type="hidden" name="id" value={thePost.id} />
                         <button>SUBMIT</button>

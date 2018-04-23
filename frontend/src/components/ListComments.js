@@ -51,6 +51,7 @@ class ListComments extends Component {
                     <AddNewComment
                         closeAddCommentModal={this.closeAddCommentModal}
                         parentId={this.props.parentId}
+                        post = {this.props.post}
                         />
                 </Modal>     
 

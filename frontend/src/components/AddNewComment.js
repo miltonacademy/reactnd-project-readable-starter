@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import serializeForm from 'form-serialize'
 import { connect } from 'react-redux'
-import { addNewCommentAction } from '../actions'
+import { addNewCommentAction, updatePostAction } from '../actions'
 
 class AddNewComment extends Component {
 
@@ -18,6 +18,26 @@ class AddNewComment extends Component {
         console.log('this.props is now ',this.props)
         console.log('this.state is now ',this.state)
         this.addNewComment(values)
+        //need to trigger updatePost with the post
+        //need to get the post from props using the post ID value
+        const postIDToReRender = values.parentId
+        const posts = this.props.posts
+        let postToReRender = {}
+        console.log('HANDLE SUBMIT VALUES BE ',values)
+        console.log('postIDToReRender be',postIDToReRender)
+        console.log('this.props.posts be',this.props.posts)
+        for (var key in posts) {
+            if (posts[key].id === postIDToReRender) {
+                console.log('%c POST TO RE-RENDER IS ','color:green; font-weight: bold;',postIDToReRender)
+                postToReRender = posts[key]
+                console.log('%c RE-RENDER POST ','color:green; font-weight: bold;',postToReRender)
+            }
+        }
+        let post = { post : postToReRender}
+        console.log('post.post.commentCount pre',post.post.commentCount)
+        post.post.commentCount ++
+        console.log('post.post.commentCount post',post.post.commentCount)
+        this.props.updatePostDispatch(post)
     }
 
     render() {
@@ -51,7 +71,8 @@ function mapStateToProps (state) {
   
   function mapDispatchToProps (dispatch) {
     return {
-      addNewCommentDispatch: (data) => dispatch(addNewCommentAction(data))
+      addNewCommentDispatch: (data) => dispatch(addNewCommentAction(data)),
+      updatePostDispatch: (data) => dispatch(updatePostAction(data)),
     }
   }
 
